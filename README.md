@@ -1,6 +1,6 @@
 # GameTracker Toy Framework
 
-A compact, interview-friendly system design toy implementation for game scoring.
+A compact system design toy implementation for game scoring.
 
 Users play games and get:
 - `+1` score for a win
@@ -80,7 +80,7 @@ print(gateway.get_top_score_friend_of("alice"))
 - `RelationServer` keeps friendship edges in memory as adjacency sets.
 - `APIGateway` centralizes simple auth checks and delegates to domain services.
 
-This is intentionally lightweight and optimized for interview storytelling, not production deployment.
+This is intentionally lightweight and optimized for clear explanation, not production deployment.
 
 ## Test Coverage
 
@@ -96,10 +96,3 @@ Run:
 python -m pip install -r requirements.txt
 python -m pytest -q
 ```
-
-## Next Extensions (If Needed)
-
-- Persist scores and relations to a database
-- Add event queue for async leaderboard recompute
-- Introduce pagination and tie-breaking policies
-- Add API layer (FastAPI/Flask) with request/response schemas
